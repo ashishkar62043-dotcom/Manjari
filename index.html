@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjari Real Estate Pvt. Ltd. | Tulsipur, Dang - Buy, Sell & Exchange</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif-heading { font-family: 'Playfair Display', serif; }
+    .gold-gradient { background: linear-gradient(135deg, #047857 0%, #065f46 100%); }
+    .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05); }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen selection:bg-emerald-600 selection:text-white">
+
+  <!-- TOP DEVELOPER NOTICE BAR (Ashish Sharma) -->
+  <aside class="bg-gradient-to-r from-emerald-800 via-teal-800 to-slate-900 text-white text-xs py-2 px-3 sm:px-4 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center space-x-2 truncate">
+        <span class="bg-amber-400 text-slate-950 font-black px-2 py-0.5 rounded text-[10px] tracking-wider uppercase">EXCLUSIVE PROPOSAL DEMO</span>
+        <span class="truncate font-medium text-[11px] sm:text-xs">Custom Architecture for <b>Manjari Real Estate Pvt. Ltd. (Tulsipur, Dang)</b></span>
+      </div>
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <a href="https://wa.me/918292794750?text=Namaste%20Ashish%20ji,%20Manjari%20Real%20Estate%20ka%20demo%20portal%20dekha.%20Development%20aur%20timeline%20finalize%20karna%20hai." target="_blank" class="bg-white text-slate-950 hover:bg-emerald-100 font-bold px-2.5 py-1 rounded-full text-[11px] flex items-center gap-1.5 shadow transition">
+          <i class="fa-brands fa-whatsapp text-emerald-600 font-bold"></i> Ashish: 8292794750
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-[33px] sm:top-[35px] z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
+          <i class="fa-solid fa-building-wheat"></i>
+        </div>
+        <div>
+          <h1 class="font-serif-heading text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight leading-none">MANJARI REAL ESTATE</h1>
+          <p class="text-[10px] sm:text-[11px] text-emerald-700 font-semibold tracking-wider uppercase mt-0.5">Pvt. Ltd. • Tulsipur, Dang (Lumbini)</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="toggleView('crm')" id="view-crm-btn" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 shadow transition">
+          <i class="fa-solid fa-chart-line text-amber-400"></i> <span class="hidden sm:inline">Admin CRM &</span> Deals Tracker
+        </button>
+        <button onclick="toggleView('public')" id="view-public-btn" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 shadow transition">
+          <i class="fa-solid fa-globe"></i> View Public Website
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SECTION A: PUBLIC WEBSITE VIEW ==================== -->
+  <div id="public-website-view" class="space-y-10">
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-slate-900 text-white py-16 px-4 overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&auto=format&fit=crop&q=80');"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+
+      <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+            <i class="fa-solid fa-shield-halved"></i> Trusted Land Deals Across Lumbini & Karnali
+          </span>
+          <h2 class="font-serif-heading text-3xl sm:text-5xl font-extrabold leading-tight">
+            Direct Land Buy, Sell & <span class="text-amber-400">Exchange Solutions</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
+            Tulsipur, Ghorahi, Nepalgunj, Butwal sahit pahaadi zilon me zameen khareedne, bechne aur **Land-to-Land ya Land-to-Vehicle** exchange ka bharosemand kendra.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#property-section" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition">
+              <i class="fa-solid fa-magnifying-glass"></i> Browse Properties
+            </a>
+            <a href="#exchange-section" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-5 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i> Exchange Offers
+            </a>
+          </div>
+        </div>
+
+        <!-- SEARCH BOX CARD -->
+        <div class="lg:col-span-5 bg-white/95 backdrop-blur-md rounded-2xl p-5 text-slate-800 shadow-2xl border border-white/40">
+          <h3 class="font-bold text-sm text-slate-900 flex items-center gap-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-sliders text-emerald-600"></i> Property & Land Finder
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs">
+            <div>
+              <label class="block font-semibold text-slate-600 mb-1">Target Location</label>
+              <select id="filter-location" onchange="applyFilters()" class="w-full bg-slate-100 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+                <option value="all">All Coverage Areas</option>
+                <option value="Tulsipur">Tulsipur, Dang</option>
+                <option value="Ghorahi">Ghorahi, Dang</option>
+                <option value="Nepalgunj">Nepalgunj, Banke</option>
+                <option value="Butwal">Butwal, Rupandehi</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-semibold text-slate-600 mb-1">Deal Type</label>
+              <select id="filter-deal" onchange="applyFilters()" class="w-full bg-slate-100 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+                <option value="all">All Deals</option>
+                <option value="sell">For Sale</option>
+                <option value="exchange">Exchange Available</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block font-semibold text-slate-600 mb-1">Search Keywords</label>
+              <input type="text" id="filter-search" oninput="applyFilters()" placeholder="E.g. Kattha, Highway touch, Commercial..." class="w-full bg-slate-100 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+            <span>Showing verified active listings</span>
+            <span class="font-bold text-emerald-700" id="filter-count-badge">4 Properties</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES STRIP -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow text-center">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center text-lg mb-2"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900">Land Buy & Sell</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Kattha, Bigha, Ropani & Dhur verified legal verification.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow text-center">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 mx-auto flex items-center justify-center text-lg mb-2"><i class="fa-solid fa-right-left"></i></div>
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900">District Exchange</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Dang zameeen se Nepalgunj/Butwal swap facility.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow text-center">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 mx-auto flex items-center justify-center text-lg mb-2"><i class="fa-solid fa-car-side"></i></div>
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900">Land-Vehicle Swap</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Gaadi (SUV/Truck/Car) ke badle zameen ka deal record.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow text-center">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 mx-auto flex items-center justify-center text-lg mb-2"><i class="fa-solid fa-user-tie"></i></div>
+          <h4 class="font-bold text-xs sm:text-sm text-slate-900">VIP Follow-up CRM</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Office walk-ins aur calls ka systematic daily tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTY LISTINGS SECTION -->
+    <section id="property-section" class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-6">
+        <div>
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Featured Inventory</span>
+          <h3 class="font-serif-heading text-xl sm:text-2xl font-bold text-slate-900">Available Lands & Commercial Plots</h3>
+        </div>
+        <span class="text-xs text-slate-500 hidden sm:inline">Dang • Banke • Rupandehi</span>
+      </div>
+
+      <div id="property-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- LAND & VEHICLE EXCHANGE SECTION -->
+    <section id="exchange-section" class="max-w-7xl mx-auto px-4">
+      <div class="bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 rounded-3xl p-6 sm:p-8 text-white shadow-xl">
+        <div class="max-w-3xl">
+          <span class="bg-black/30 text-amber-200 text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider">SPECIAL EXCHANGE SECTION</span>
+          <h3 class="font-serif-heading text-2xl sm:text-3xl font-extrabold mt-2">Zameen Ke Badle Gaadi Ya Dusre Zile Ki Zameen?</h3>
+          <p class="text-xs sm:text-sm text-amber-100 mt-2 leading-relaxed">
+            Agar aapke paas Scorpio, Hilux, Creta ya commercial vehicle hai aur aap Dang/Nepalgunj me plot chahte hain, ya Tulsipur ki zameen exchange karna chahte hain—hum direct valuation karke deal match karwate hain.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <button onclick="openEnquiryModal('Exchange Valuation Inquiry')" class="bg-slate-950 hover:bg-slate-900 text-white font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition shadow">
+              <i class="fa-solid fa-scale-balanced text-amber-400"></i> Submit Your Exchange Proposal
+            </button>
+            <a href="https://wa.me/918292794750?text=Namaste%20Manjari%20Real%20Estate,%20humein%20land%20ya%20vehicle%20exchange%20ki%20valuation%20karni%20hai." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-2 transition shadow">
+              <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Valuation Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HEAD OFFICE SECTION -->
+    <section class="max-w-7xl mx-auto px-4 pb-8">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 card-shadow grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Head Office</span>
+          <h3 class="font-serif-heading text-xl sm:text-2xl font-bold text-slate-900 mt-1">Manjari Real Estate Pvt. Ltd.</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Tulsipur Head Office, Dang, Lumbini Province, Nepal.<br>
+            Serving Ghorahi, Nepalgunj, Butwal, Karnali & Hilly Districts.
+          </p>
+          <div class="mt-4 space-y-2 text-xs text-slate-700">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-emerald-600"></i> Phone: Contact 1 & Contact 2</div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-envelope text-emerald-600"></i> Email: info@manjarirealestate.com</div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-clock text-emerald-600"></i> Daily: 9:00 AM - 6:00 PM (Office Walk-ins)</div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800 mb-2">Send Instant Property Requirement</h4>
+          <form onsubmit="handlePublicInquiry(event)" class="space-y-2.5 text-xs">
+            <input type="text" id="pub-name" placeholder="Aapka Naam" required class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            <input type="tel" id="pub-phone" placeholder="Mobile / WhatsApp Number" required class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            <select id="pub-intent" class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+              <option value="Land Buy">Land Buy (Kharidna hai)</option>
+              <option value="Land Sell">Land Sell (Bechna hai)</option>
+              <option value="District Land Exchange">District to District Land Exchange</option>
+              <option value="Land-Vehicle Exchange">Land to Vehicle Exchange</option>
+            </select>
+            <textarea id="pub-notes" placeholder="Property details, budget ya location..." rows="2" class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600"></textarea>
+            <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-bold py-2 rounded-lg transition">
+              Submit Enquiry (Enters Daily CRM Automatically)
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== SECTION B & C: ADMIN CRM & EXCHANGE DEALS TRACKER ==================== -->
+  <div id="admin-crm-view" class="hidden max-w-7xl mx-auto px-4 py-6 space-y-6">
+
+    <!-- CRM HEADER BAR -->
+    <div class="bg-slate-900 text-white p-5 rounded-2xl shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="bg-emerald-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded">AUTHENTICATED ADMIN</span>
+          <span class="text-xs text-slate-400">Daily Follow-up CRM & Deal Book</span>
+        </div>
+        <h2 class="font-serif-heading text-xl sm:text-2xl font-bold mt-1">Manjari Client & Deals Tracker</h2>
+        <p class="text-xs text-slate-400">Manage daily walk-ins, phone calls, pending site visits, and exchange record sheet.</p>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="exportCRMToCSV()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 border border-slate-700 transition">
+          <i class="fa-solid fa-file-excel text-emerald-400"></i> Export Excel/CSV
+        </button>
+        <button onclick="toggleView('public')" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-arrow-left"></i> Back to Website
+        </button>
+      </div>
+    </div>
+
+    <!-- DAILY KPI COUNTERS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow">
+        <span class="text-[11px] font-bold text-slate-400 uppercase">Today's Follow-ups</span>
+        <div class="text-2xl font-black text-rose-600 mt-1" id="kpi-today">2</div>
+        <span class="text-[10px] text-slate-500">Requires call/visit today</span>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow">
+        <span class="text-[11px] font-bold text-slate-400 uppercase">Total Active Leads</span>
+        <div class="text-2xl font-black text-slate-900 mt-1" id="kpi-total">5</div>
+        <span class="text-[10px] text-slate-500">In CRM pipeline</span>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow">
+        <span class="text-[11px] font-bold text-slate-400 uppercase">Site Visits Scheduled</span>
+        <div class="text-2xl font-black text-amber-600 mt-1" id="kpi-visits">1</div>
+        <span class="text-[10px] text-slate-500">Dang & Nepalgunj plots</span>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 card-shadow">
+        <span class="text-[11px] font-bold text-slate-400 uppercase">Exchange Deals Pipeline</span>
+        <div class="text-2xl font-black text-emerald-600 mt-1" id="kpi-exchange">2</div>
+        <span class="text-[10px] text-slate-500">Land & Vehicle swaps</span>
+      </div>
+    </div>
+
+    <!-- LEAD ENTRY MODAL / FORM -->
+    <div class="bg-white rounded-2xl p-5 border border-slate-200 card-shadow">
+      <h3 class="font-bold text-sm text-slate-900 border-b pb-2 flex items-center gap-2">
+        <i class="fa-solid fa-user-plus text-emerald-600"></i> New Daily Client Entry (Walk-in / Call / Lead)
+      </h3>
+      <form onsubmit="handleNewLead(event)" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-3 text-xs">
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Client Name *</label>
+          <input type="text" id="lead-name" required placeholder="E.g. Deepak Oli" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+        </div>
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Phone / WhatsApp *</label>
+          <input type="tel" id="lead-phone" required placeholder="98XXXXXXXX" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+        </div>
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Interest Category</label>
+          <select id="lead-interest" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            <option value="Land Buy">Land Buy</option>
+            <option value="Land Sell">Land Sell</option>
+            <option value="District Land Exchange">District Land Exchange</option>
+            <option value="Vehicle-Land Exchange">Vehicle-Land Exchange</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Source</label>
+          <select id="lead-source" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            <option value="Walk-in (Tulsipur Office)">Walk-in (Tulsipur Office)</option>
+            <option value="Phone Call">Phone Call</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Reference">Reference</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Follow-up Date</label>
+          <input type="date" id="lead-date" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+        </div>
+        <div>
+          <label class="block font-medium text-slate-600 mb-1">Lead Status</label>
+          <select id="lead-status" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+            <option value="New">New</option>
+            <option value="Contacted">Contacted</option>
+            <option value="Visit Scheduled">Visit Scheduled</option>
+            <option value="Negotiation">Negotiation</option>
+            <option value="Closed / Won">Closed / Won</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block font-medium text-slate-600 mb-1">Notes / Budget / Property Requirement</label>
+          <input type="text" id="lead-notes" placeholder="Looking for 2 Kattha land in Tulsipur near main road..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2 focus:outline-none focus:border-emerald-600">
+        </div>
+        <div class="md:col-span-4 flex justify-end">
+          <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-lg text-xs transition">
+            Save Client Lead
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- CRM CLIENT PIPELINE TABLE -->
+    <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+      <div class="p-4 border-b border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <h3 class="font-bold text-sm text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-list-check text-emerald-600"></i> Client Follow-up List
+        </h3>
+        <input type="text" id="crm-search" oninput="renderCRMTable()" placeholder="Search by name, phone or notes..." class="text-xs bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 focus:outline-none">
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-slate-100 text-slate-600 border-b border-slate-200 uppercase font-semibold text-[10px] tracking-wider">
+              <th class="p-3">Client Details</th>
+              <th class="p-3">Interest / Source</th>
+              <th class="p-3">Requirement / Notes</th>
+              <th class="p-3">Follow-up Date</th>
+              <th class="p-3">Pipeline Status</th>
+              <th class="p-3 text-right">Instant Action</th>
+            </tr>
+          </thead>
+          <tbody id="crm-table-body" class="divide-y divide-slate-100 text-slate-700">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEVELOPER PITCH & DELIVERABLE SPECIFICATION CARD -->
+  <footer class="max-w-7xl mx-auto px-4 mt-12 pb-16">
+    <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 text-white shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-emerald-500/30">
+      <div class="max-w-2xl">
+        <span class="inline-block bg-amber-400 text-slate-950 font-black px-2.5 py-0.5 rounded text-[10px] uppercase tracking-wider mb-2">
+          FOR MANJARI REAL ESTATE DIRECTORS
+        </span>
+        <h3 class="text-xl sm:text-2xl font-bold font-serif-heading">
+          Complete Public Website, Property Engine & Daily Follow-up CRM
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+          Tulsipur office walk-ins, phone inquiries, aur land-vehicle exchange records ko ek hi secure cloud dashboard me manage karein. Har client ka follow-up time par hoga aur koi bhi deal miss nahi hogi.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4 text-xs text-slate-300">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Land/Vehicle Deals Tracker</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Secure Admin Login</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Excel/CSV Export</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> 1-Click WhatsApp/Call</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Mobile Responsive & Fast</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Delivery in 10-14 Days</span>
+        </div>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/20 flex flex-col items-center text-center w-full md:w-auto min-w-[250px]">
+        <div class="w-12 h-12 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-xl font-bold mb-2">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span class="text-[11px] text-slate-300 uppercase tracking-widest font-semibold">Web Architect</span>
+        <h4 class="text-base font-extrabold text-white">Ashish Sharma</h4>
+        <span class="text-xs text-amber-400 font-bold mb-3">📞 8292794750</span>
+        
+        <a href="https://wa.me/918292794750?text=Namaste%20Ashish%20ji,%20Manjari%20Real%20Estate%20ka%20proposal%20dekha.%20Website%20aur%20CRM%20kaam%20start%20karna%20hai." target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition shadow-lg">
+          <i class="fa-brands fa-whatsapp text-sm font-bold"></i> Contact Ashish Sharma
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // DUMMY INITIAL REAL ESTATE INVENTORY
+    const properties = [
+      {
+        id: "p1",
+        title: "Commercial Land Near Buspark",
+        location: "Tulsipur",
+        area: "4 Kattha 5 Dhur",
+        price: "Rs. 45 Lakh / Kattha",
+        type: "sell",
+        status: "Available",
+        img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop&q=80",
+        desc: "Main highway touch plot suitable for hotel, showroom or hospital.",
+        exchange: "Open for Land-to-Land in Ghorahi"
+      },
+      {
+        id: "p2",
+        title: "Residential Plot Near Airport Road",
+        location: "Tulsipur",
+        area: "2 Kattha 10 Dhur",
+        price: "Rs. 22 Lakh / Kattha",
+        type: "exchange",
+        status: "Exchange Available",
+        img: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=600&auto=format&fit=crop&q=80",
+        desc: "Peaceful residential society with 20ft road, electricity and water facility.",
+        exchange: "Ready to exchange with 4WD Scorpio or Hilux"
+      },
+      {
+        id: "p3",
+        title: "Highway Commercial Plot",
+        location: "Ghorahi",
+        area: "1 Bigha 2 Kattha",
+        price: "Rs. 65 Lakh / Kattha",
+        type: "sell",
+        status: "Available",
+        img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop&q=80",
+        desc: "Prime investment property for warehouses, petrol pump or plotting.",
+        exchange: "Partial cash + Vehicle considered"
+      },
+      {
+        id: "p4",
+        title: "City Center Commercial Plot",
+        location: "Nepalgunj",
+        area: "3 Kattha",
+        price: "Rs. 55 Lakh / Kattha",
+        type: "exchange",
+        status: "Exchange Available",
+        img: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=600&auto=format&fit=crop&q=80",
+        desc: "Near Surkhet Road, high-growth area with double side access.",
+        exchange: "Willing to exchange with Tulsipur Land"
+      }
+    ];
+
+    // CRM LEADS DATA (INITIAL MOCK DATA)
+    let crmLeads = [
+      {
+        id: 1,
+        name: "Deepak Rawat",
+        phone: "9857823411",
+        interest: "Vehicle-Land Exchange",
+        source: "Walk-in (Tulsipur Office)",
+        notes: "Has 2022 Scorpio, wants 2 Kattha land near Tulsipur ring road.",
+        date: "2026-11-03",
+        status: "Visit Scheduled"
+      },
+      {
+        id: 2,
+        name: "Hari Prasad Sharma",
+        phone: "9847812900",
+        interest: "Land Buy",
+        source: "Phone Call",
+        notes: "Budget 50-60 Lakh for Ghorahi commercial land.",
+        date: "2026-11-03",
+        status: "Contacted"
+      },
+      {
+        id: 3,
+        name: "Karan Chaudhary",
+        phone: "9809834122",
+        interest: "District Land Exchange",
+        source: "WhatsApp",
+        notes: "Wants to exchange Nepalgunj plot for Dang land.",
+        date: "2026-11-05",
+        status: "Negotiation"
+      }
+    ];
+
+    function renderProperties(list) {
+      const container = document.getElementById('property-grid');
+      container.innerHTML = list.map(item => `
+        <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden flex flex-col justify-between hover:border-emerald-600 transition">
+          <div>
+            <div class="relative h-44 overflow-hidden bg-slate-900">
+              <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${item.type === 'exchange' ? 'bg-amber-500 text-slate-950' : 'bg-emerald-600 text-white'}">
+                ${item.status}
+              </span>
+              <span class="absolute bottom-3 right-3 bg-black/80 backdrop-blur-md text-white font-bold text-xs px-2.5 py-1 rounded-lg">
+                <i class="fa-solid fa-location-dot text-amber-400 text-[10px]"></i> ${item.location}
+              </span>
+            </div>
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between text-xs text-slate-500">
+                <span class="font-bold text-emerald-800"><i class="fa-solid fa-ruler-combined"></i> ${item.area}</span>
+                <span class="font-extrabold text-slate-900 text-sm">${item.price}</span>
+              </div>
+              <h4 class="font-bold text-slate-900 text-base leading-snug">${item.title}</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">${item.desc}</p>
+              ${item.exchange ? `
+                <div class="p-2 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-900 font-medium flex items-center gap-1.5">
+                  <i class="fa-solid fa-arrow-right-arrow-left text-amber-600"></i> ${item.exchange}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+          <div class="p-4 pt-0 grid grid-cols-2 gap-2 mt-3">
+            <a href="tel:9857800000" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 transition">
+              <i class="fa-solid fa-phone text-emerald-600"></i> Call Now
+            </a>
+            <a href="https://wa.me/918292794750?text=Namaste%20Manjari%20Real%20Estate,%20I%20am%20interested%20in%20${encodeURIComponent(item.title)}%20(${item.location})." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 transition">
+              <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function applyFilters() {
+      const loc = document.getElementById('filter-location').value;
+      const deal = document.getElementById('filter-deal').value;
+      const search = document.getElementById('filter-search').value.toLowerCase();
+
+      const filtered = properties.filter(p => {
+        const matchLoc = loc === 'all' || p.location === loc;
+        const matchDeal = deal === 'all' || p.type === deal;
+        const matchSearch = p.title.toLowerCase().includes(search) || 
+                            p.desc.toLowerCase().includes(search) ||
+                            p.area.toLowerCase().includes(search);
+        return matchLoc && matchDeal && matchSearch;
+      });
+
+      document.getElementById('filter-count-badge').innerText = `${filtered.length} Properties`;
+      renderProperties(filtered);
+    }
+
+    function toggleView(view) {
+      if (view === 'crm') {
+        document.getElementById('public-website-view').classList.add('hidden');
+        document.getElementById('admin-crm-view').classList.remove('hidden');
+        document.getElementById('view-crm-btn').classList.add('hidden');
+        document.getElementById('view-public-btn').classList.remove('hidden');
+        renderCRMTable();
+        updateKPIs();
+      } else {
+        document.getElementById('admin-crm-view').classList.add('hidden');
+        document.getElementById('public-website-view').classList.remove('hidden');
+        document.getElementById('view-public-btn').classList.add('hidden');
+        document.getElementById('view-crm-btn').classList.remove('hidden');
+      }
+    }
+
+    function renderCRMTable() {
+      const tbody = document.getElementById('crm-table-body');
+      const query = (document.getElementById('crm-search')?.value || '').toLowerCase();
+
+      const filtered = crmLeads.filter(l => 
+        l.name.toLowerCase().includes(query) ||
+        l.phone.includes(query) ||
+        l.notes.toLowerCase().includes(query)
+      );
+
+      tbody.innerHTML = filtered.map(lead => `
+        <tr class="hover:bg-slate-50 transition">
+          <td class="p-3">
+            <div class="font-bold text-slate-900">${lead.name}</div>
+            <div class="text-[11px] text-slate-500">${lead.phone}</div>
+          </td>
+          <td class="p-3">
+            <span class="inline-block bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded text-[10px]">${lead.interest}</span>
+            <div class="text-[10px] text-slate-400 mt-0.5">${lead.source}</div>
+          </td>
+          <td class="p-3 max-w-xs">
+            <div class="line-clamp-2 text-slate-600">${lead.notes}</div>
+          </td>
+          <td class="p-3">
+            <span class="font-bold ${lead.date === '2026-11-03' ? 'text-rose-600 bg-rose-50 px-2 py-0.5 rounded' : 'text-slate-600'}">${lead.date || 'Not Set'}</span>
+          </td>
+          <td class="p-3">
+            <select onchange="updateLeadStatus(${lead.id}, this.value)" class="bg-slate-100 border border-slate-300 rounded p-1 text-[11px] font-medium">
+              <option ${lead.status === 'New' ? 'selected' : ''}>New</option>
+              <option ${lead.status === 'Contacted' ? 'selected' : ''}>Contacted</option>
+              <option ${lead.status === 'Visit Scheduled' ? 'selected' : ''}>Visit Scheduled</option>
+              <option ${lead.status === 'Negotiation' ? 'selected' : ''}>Negotiation</option>
+              <option ${lead.status === 'Closed / Won' ? 'selected' : ''}>Closed / Won</option>
+            </select>
+          </td>
+          <td class="p-3 text-right">
+            <div class="flex items-center justify-end gap-1.5">
+              <a href="tel:${lead.phone}" class="p-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg" title="Call Client"><i class="fa-solid fa-phone"></i></a>
+              <a href="https://wa.me/${lead.phone}?text=Namaste%20${encodeURIComponent(lead.name)}%20ji,%20Manjari%20Real%20Estate%20Tulsipur%20se%20follow-up%20kar%20rahe%20hain." target="_blank" class="p-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 rounded-lg" title="WhatsApp Message"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function handleNewLead(e) {
+      e.preventDefault();
+      const newLead = {
+        id: Date.now(),
+        name: document.getElementById('lead-name').value.trim(),
+        phone: document.getElementById('lead-phone').value.trim(),
+        interest: document.getElementById('lead-interest').value,
+        source: document.getElementById('lead-source').value,
+        notes: document.getElementById('lead-notes').value.trim() || 'General inquiry',
+        date: document.getElementById('lead-date').value || '2026-11-04',
+        status: document.getElementById('lead-status').value
+      };
+
+      crmLeads.unshift(newLead);
+      e.target.reset();
+      renderCRMTable();
+      updateKPIs();
+      alert("New Client Lead saved to Daily CRM pipeline!");
+    }
+
+    function handlePublicInquiry(e) {
+      e.preventDefault();
+      const lead = {
+        id: Date.now(),
+        name: document.getElementById('pub-name').value.trim(),
+        phone: document.getElementById('pub-phone').value.trim(),
+        interest: document.getElementById('pub-intent').value,
+        source: "Website Public Enquiry",
+        notes: document.getElementById('pub-notes').value.trim() || "Website form submission",
+        date: "2026-11-04",
+        status: "New"
+      };
+
+      crmLeads.unshift(lead);
+      e.target.reset();
+      alert("Thank you! Your property inquiry has been received. Our Tulsipur team will contact you shortly.");
+    }
+
+    function updateLeadStatus(id, newStatus) {
+      const lead = crmLeads.find(l => l.id === id);
+      if (lead) lead.status = newStatus;
+      updateKPIs();
+    }
+
+    function updateKPIs() {
+      document.getElementById('kpi-total').innerText = crmLeads.length;
+      document.getElementById('kpi-visits').innerText = crmLeads.filter(l => l.status === 'Visit Scheduled').length;
+      document.getElementById('kpi-exchange').innerText = crmLeads.filter(l => l.interest.includes('Exchange')).length;
+    }
+
+    function exportCRMToCSV() {
+      let csv = "ID,Name,Phone,Interest,Source,Notes,FollowUpDate,Status\n";
+      crmLeads.forEach(l => {
+        csv += `"${l.id}","${l.name}","${l.phone}","${l.interest}","${l.source}","${l.notes.replace(/"/g, '""')}","${l.date}","${l.status}"\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.setAttribute('href', url);
+      a.setAttribute('download', `Manjari_CRM_Leads_${new Date().toISOString().slice(0,10)}.csv`);
+      a.click();
+    }
+
+    // Initial load
+    renderProperties(properties);
+  </script>
+</body>
+</html>
